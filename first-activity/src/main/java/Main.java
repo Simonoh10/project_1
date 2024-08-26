@@ -118,10 +118,10 @@ public class Main {
 		}
 		if (acum>1){
 			
-			for(int i=acum; i>0; i--){
-				a=(a+y*10^i);
+			for(int i=acum-1; i>=0; i--){
 				y=c%10;
-				
+				a =a + (int) (y * Math.pow((double) 10, (double) i));
+				System.out.println(a);
 				c=c/10;
 				
 			}
